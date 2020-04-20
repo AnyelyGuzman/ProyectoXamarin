@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Prueba.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Horarios"
+                TextColor="Black"
+                FontSize="25"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Image Source="ag" HeightRequest="150"/>
+
+            <Button Text="Agregar Horario" 
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="Button_Clicked" />
+
+            <Image Source="ver" HeightRequest="150"/>
+
+            <Button Text="Ver Horario" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Clicked="Button_Clicked_1" />
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Prueba.Agregar">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="title" Text="Agregar Horario"
+                    FontSize="25"
+                    TextColor="Black"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Label x:Name="resp"
+                    FontSize="25"
+                    TextColor="Red"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+                <Picker x:Name="dia" Title="Dia" SelectedIndexChanged="diaSelected"/>
+
+                <Picker x:Name="semestre" Title="Semestre" SelectedIndexChanged="semestreSelected"/>
+
+                <Picker x:Name="materia" Title="Materia" SelectedIndexChanged="materiaSelected"/>
+
+                <Picker x:Name="docente" Title="Docente" SelectedIndexChanged="docenteSelected"/>
+
+                <Picker x:Name="hora" Title="Hora" SelectedIndexChanged="horaSelected"/>
+
+                <Picker x:Name="salon" Title="Salon" SelectedIndexChanged="salonSelected"/>
+
+                <Button Text="Guardar" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
