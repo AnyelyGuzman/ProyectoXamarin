@@ -20,7 +20,7 @@
                     VerticalOptions="CenterAndExpand" 
                     HorizontalOptions="CenterAndExpand" />
 
-                <Picker x:Name="dia" Title="Dia" SelectedIndexChanged="diaSelected"/>
+                <Picker x:Name="diaa" Title="Dia" SelectedIndexChanged="diaSelected"/>
 
                 <Picker x:Name="semestre" Title="Semestre" SelectedIndexChanged="semestreSelected"/>
 

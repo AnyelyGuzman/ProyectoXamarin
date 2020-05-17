@@ -20,6 +20,7 @@ namespace Prueba
         public MainPage()
         {
             InitializeComponent();
+            Application.Current.Properties.Clear();
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

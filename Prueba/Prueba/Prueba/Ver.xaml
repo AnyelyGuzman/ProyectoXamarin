@@ -11,6 +11,12 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
+            <Label x:Name="title"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
+            <Picker x:Name="dia" Title="Dia" SelectedIndexChanged="diaSelected"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

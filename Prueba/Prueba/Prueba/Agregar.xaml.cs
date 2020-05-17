@@ -17,7 +17,7 @@ namespace Prueba
         public List<DocenteHorario> docentes { get; set; }
         public List<MateriaHorario> materias { get; set; }
         public List<SemestreHorario> semestres { get; set; }
-        public List<DiaHorario> dia { get; set; }
+        public List<DiaHorario> dias { get; set; }
 
     }
 
@@ -113,9 +113,9 @@ namespace Prueba
                         docente.Items.Add(element.nombre.Trim() + " " + element.apellido.Trim());
                     }
 
-                    foreach (DiaHorario element in respuesta.dia)
+                    foreach (DiaHorario element in respuesta.dias)
                     {
-                        dia.Items.Add(element.dia);
+                        diaa.Items.Add(element.dia);
                     }
                 }
             }
@@ -180,8 +180,8 @@ namespace Prueba
 
         private void diaSelected(object sender, EventArgs e)
         {
-            var getdiaSelect = dia.Items[dia.SelectedIndex];
-            DiaHorario resp = respuesta.dia.Find(x => x.dia.Contains(getdiaSelect));
+            var getdiaSelect = diaa.Items[diaa.SelectedIndex];
+            DiaHorario resp = respuesta.dias.Find(x => x.dia.Contains(getdiaSelect));
             diaSelect = resp.id_dia;
         }
 

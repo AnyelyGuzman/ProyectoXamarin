@@ -2196,11 +2196,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.Android\\Prueba.Android.csproj",
+      "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.Android\\Prueba.Android.csproj",
       "projectName": "Prueba.Android",
-      "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.Android\\Prueba.Android.csproj",
+      "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.Android\\Prueba.Android.csproj",
       "packagesPath": "C:\\Users\\anyel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.Android\\obj\\",
+      "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2221,8 +2221,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
-              "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj"
+            "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
+              "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj"
             }
           }
         }

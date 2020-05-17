@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj": {}
+    "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj": {
+    "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj",
         "projectName": "Prueba.iOS",
-        "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj",
+        "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.iOS\\Prueba.iOS.csproj",
         "packagesPath": "C:\\Users\\anyel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba.iOS\\obj\\",
+        "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
-                "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj"
+              "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
+                "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
+    "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj",
+        "projectUniqueName": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj",
         "projectName": "Prueba",
-        "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\Prueba.csproj",
+        "projectPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\Prueba.csproj",
         "packagesPath": "C:\\Users\\anyel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\Prueba\\Prueba\\Prueba\\obj\\",
+        "outputPath": "C:\\Users\\anyel\\OneDrive\\Documentos\\GitHub\\ProyectoXamarin\\Prueba\\Prueba\\Prueba\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
