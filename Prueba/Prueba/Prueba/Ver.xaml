@@ -7,16 +7,36 @@
              x:Class="Prueba.Ver">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Listado de las materia inscritas previamente"
+            <Label Text="Horarios"
+                   FontSize="25"
+                   TextColor="Black"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Picker x:Name="dia" Title="Dias" SelectedIndexChanged="diaSelected"/>
+            <ListView x:Name="list" RowHeight="100" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Hora}"></Label>
+                                <Label Text="{Binding Nombre}"></Label>
+                                <Label Text="{Binding nombre}"></Label>
+                                <Label Text="{Binding bloque}"></Label>
+                                <Label Text="{Binding Semestre}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Label x:Name="title"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
-            <Picker x:Name="dia" Title="Dia" SelectedIndexChanged="diaSelected"/>
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+            /> 
 
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage> 

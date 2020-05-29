@@ -35,6 +35,19 @@ namespace Prueba
 
     }
 
+    class ListRender
+    {
+        public string Hora { get; set; }
+        
+        public string Nombre { get; set; }
+        
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string bloque { get; set; }
+        public string salon { get; set; }
+        public string Semestre { get; set; }
+    }
+
     class DiasVerHorario
     {
         public int id_dia { get; set; }
@@ -47,6 +60,7 @@ namespace Prueba
     {
         private RespuestaHorario respuesta;
         private List<DiasVerHorario> respuestaD;
+        private List<DiaVerHorario> respuestaDi;
         private int diaSelect;
 
 
@@ -79,11 +93,53 @@ namespace Prueba
             base.OnAppearing();
         }
 
-        private void diaSelected(object sender, EventArgs e)
+        private async void diaSelected(object sender, EventArgs e)
         {
-            var getdiaSelect = dia.Items[dia.SelectedIndex];
-            //DiaVerHorario resp = respuestaD.Find(x => x.dia.Contains(getdiaSelect));
-            //diaSelect = resp.id_dia;
+            notificacion objNotificacion = new notificacion();
+            objNotificacion.notificar("Notificacion", "Clases", 0);
+            
+            try
+            {
+                constante constante = new constante();
+                HttpClient client = new HttpClient(); 
+                var postData = new List<KeyValuePair<string, string>>();
+                var getdiaSelect = dia.Items[dia.SelectedIndex];
+
+                postData.Add(new KeyValuePair<string, string>("dia", getdiaSelect));
+                postData.Add(new KeyValuePair<string, string>("id_usuario", Application.Current.Properties["usuario"] as string));
+
+                var content = new System.Net.Http.FormUrlEncodedContent(postData);
+                var response = await client.PostAsync(constante.getUrl() + "horario.php", content);
+                
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    respuestaDi = Newtonsoft.Json.JsonConvert.DeserializeObject<List<DiaVerHorario>>(jsonString);
+
+
+                    List<ListRender> Dias = new List<ListRender>();
+                    foreach (DiaVerHorario element in respuestaDi)
+                    {
+                        Dias.Add(new ListRender{
+                            Hora = "Hora: " + element.Hora,
+                            Nombre = "Materia: " + element.Nombre,
+                            nombre = "Profesor: " + element.nombre + " " + element.apellido,
+                            apellido = element.apellido,
+                            bloque = "Salon: " + element.bloque + " " + element.salon,
+                            salon = element.salon,
+                            Semestre = "Semestre: " + element.Semestre
+                        });
+                    }
+                    list.ItemsSource = Dias;
+                }
+            }
+            catch (Exception ex)
+            {
+                title.Text = ex.Message;
+            }
+            base.OnAppearing();
         }
+
     }
 }
